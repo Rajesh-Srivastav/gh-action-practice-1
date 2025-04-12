@@ -13,6 +13,8 @@ jobs:
         run: npm run lint
       - name: Testing File
         run: npm test
+      - name: Install dependencies
+        run: npm ci
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
